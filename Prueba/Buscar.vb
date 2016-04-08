@@ -1,5 +1,6 @@
 ﻿Public Class Buscar
-    Public _op As Integer
+    Private _op As Integer
+
     Public Sub New(op As Integer)
         ' Llamada necesaria para el diseñador.
         InitializeComponent()

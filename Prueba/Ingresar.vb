@@ -85,11 +85,14 @@ Public Class Ingresar
     Private Sub btnCrear_Click(sender As Object, e As EventArgs) Handles btnCrear.Click
         If txtNombre.Text.Length > 0 Then
             Try
+                'Iniciamos la base de datos
                 Database = New pruebaEntities()
+                ' Creamos un nuevo usuario
                 Dim usuario = New usuario
                 usuario.Nombres = txtNombre.Text
                 usuario.Apellidos = txtApellido.Text
                 usuario.Cedula = txtCedula.Text
+                'Creamos una nueva cabecera de factura
                 Dim factura = New fact_cab
                 factura.Estado = "A"
                 factura.fecha = Format(dtpFecha.Value, "yyyy-MM-dd")
@@ -99,7 +102,7 @@ Public Class Ingresar
                 ' Deja preparado los datos para ser guardados en la base de datos
                 Database.usuario.AddOrUpdate(usuario)
                 Database.fact_cab.AddOrUpdate(factura)
-                ' Accedemos a cada uno de las instacias de la clase en la lista y procedemos a prepararlas para guardarlas
+                ' Accedemos a cada uno de las instancias de la clase en la lista y procedemos a prepararlas para guardarlas
                 For Each detalle In _listaDetalle
                     detalle.idfact_cab = factura.idfact_cab
                     Database.fact_det.AddOrUpdate(detalle)
