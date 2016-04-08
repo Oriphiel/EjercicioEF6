@@ -7,4 +7,8 @@
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
         PreBuscar.Show()
     End Sub
+
+    Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
+        PreEditar.Show()
+    End Sub
 End Class

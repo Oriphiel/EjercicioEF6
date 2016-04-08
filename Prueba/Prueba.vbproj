@@ -117,6 +117,12 @@
     <Compile Include="Buscar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Editar.Designer.vb">
+      <DependentUpon>Editar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Factura.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,6 +188,12 @@
     <Compile Include="PreBuscar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PreEditar.Designer.vb">
+      <DependentUpon>PreEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reporte.Designer.vb">
       <DependentUpon>Reporte.vb</DependentUpon>
     </Compile>
@@ -192,6 +204,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar.resx">
+      <DependentUpon>Editar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Factura.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -211,6 +226,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PreBuscar.resx">
       <DependentUpon>PreBuscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreEditar.resx">
+      <DependentUpon>PreEditar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reporte.resx">
       <DependentUpon>Reporte.vb</DependentUpon>

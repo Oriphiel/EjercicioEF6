@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Ingresar
+Partial Class Editar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -70,7 +70,7 @@ Partial Class Ingresar
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(823, 570)
-        Me.Panel1.TabIndex = 0
+        Me.Panel1.TabIndex = 1
         '
         'btnCrear
         '
@@ -78,7 +78,7 @@ Partial Class Ingresar
         Me.btnCrear.Name = "btnCrear"
         Me.btnCrear.Size = New System.Drawing.Size(120, 37)
         Me.btnCrear.TabIndex = 27
-        Me.btnCrear.Text = "Crear Factura"
+        Me.btnCrear.Text = "Editar Factura"
         Me.btnCrear.UseVisualStyleBackColor = True
         '
         'lblTotal
@@ -270,14 +270,14 @@ Partial Class Ingresar
         '
         'btnBorrar
         '
-        Me.btnBorrar.Location = New System.Drawing.Point(504, 59)
+        Me.btnBorrar.Location = New System.Drawing.Point(494, 59)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(75, 35)
-        Me.btnBorrar.TabIndex = 28
+        Me.btnBorrar.TabIndex = 18
         Me.btnBorrar.Text = "Borrar"
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
-        'Ingresar
+        'Editar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -285,8 +285,9 @@ Partial Class Ingresar
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "Ingresar"
-        Me.Text = "Ingresar"
+        Me.Name = "Editar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Editar"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.dgvDetalle, System.ComponentModel.ISupportInitialize).EndInit()
